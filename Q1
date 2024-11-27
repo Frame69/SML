@@ -1,0 +1,30 @@
+# a) Print a built-in dataset
+  # Printing the built-in 'mtcars' dataset
+  print(mtcars)
+
+  # b) Get information about the dataset
+  # Using the 'str()' function to get the structure of the dataset
+  str(mtcars)
+  # Using the 'ncol()' and 'nrow()' functions to get the number of rows and columns
+  cat("Number of rows in the dataset:", nrow(mtcars), "\n")
+  cat("Number of columns in the dataset:", ncol(mtcars), "\n")
+
+  # c) Find dimensions of the dataset and view the names of the variables
+  # Dimensions can be obtained using the 'dim()' function
+  # Variable names can be viewed using the 'names()' function
+  cat("Dimensions of the dataset:", dim(mtcars), "\n")
+  cat("Names of the variables:", names(mtcars), "\n")
+
+  # d) Find name of each row in the first column
+  # We can use the row names along with the first column to display them
+  cat("Names of rows in the first column:", rownames(mtcars), "\n")
+ 
+  # e) Print all the values of any variable of your choice from the dataset
+  # Printing all the values of the 'mpg' (miles per gallon) variable
+  cat("Values of the 'mpg' variable:", mtcars$mpg, "\n")
+
+  # f) Get statistical summary of the dataset
+  # Using the 'summary()' function to get the statistical summary
+  
+  cat("Statistical summary of the dataset:\n")
+  summary(mtcars)
